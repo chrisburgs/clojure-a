@@ -5,9 +5,12 @@
 	(use '_core :reload))
 
 (defn main []
-	(println "Main..."))
+	(println "Main...")
+)
 
-(defn thing []
-	(def a (repeat 3 (into [] [0 0 0])))
-	(println a)
+
+
+(defn thing [x y]
+	(def board (repeat x (repeat y (concat [0]))))
+	(println board)
 )
